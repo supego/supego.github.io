@@ -162,6 +162,21 @@ img { display: block; max-width: 100%; }
 }
 .nav-links a:hover { color: var(--white); }
 
+/* Brand name link in nav */
+.nav-links .nav-brand {
+  font-family: var(--font-display);
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: .06em;
+  font-size: .78rem;
+  text-transform: uppercase;
+  opacity: .85;
+}
+.nav-links .nav-brand:hover {
+  color: var(--accent);
+  opacity: 1;
+}
+
 /* Hamburger — hidden on desktop */
 .nav-toggle {
   display: none;
@@ -215,6 +230,16 @@ img { display: block; max-width: 100%; }
   inset: 0;
   background: radial-gradient(ellipse 70% 70% at 50% 40%,
     transparent 20%, var(--bg) 80%);
+  pointer-events: none;
+}
+
+/* Hero canvas animation */
+#hero-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
   pointer-events: none;
 }
 
@@ -362,9 +387,10 @@ img { display: block; max-width: 100%; }
   background-color: var(--bg);
 }
 .game-cover-more span {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--text-faint);
   line-height: 1;
+  letter-spacing: .05em;
 }
 
 /* No-image placeholder tile (e.g. The Grand Tour) */
@@ -401,6 +427,14 @@ img { display: block; max-width: 100%; }
   font-size: .72rem;
   color: var(--text-muted);
   letter-spacing: .02em;
+}
+
+.game-studio {
+  font-size: .68rem;
+  color: var(--accent);
+  letter-spacing: .04em;
+  margin-bottom: .15rem;
+  opacity: .75;
 }
 
 /* ═══════════════════════════════════════════════════════════════════════
