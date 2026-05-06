@@ -171,6 +171,7 @@ img { display: block; max-width: 100%; }
   font-size: .78rem;
   text-transform: uppercase;
   opacity: .85;
+  white-space: nowrap;
 }
 .nav-links .nav-brand:hover {
   color: var(--accent);
