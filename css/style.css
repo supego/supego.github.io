@@ -1045,6 +1045,15 @@ img { display: block; max-width: 100%; }
     background: linear-gradient(180deg, transparent 66%, rgba(5, 5, 5, .82));
   }
 
+  .project-detail-hero {
+    min-height: 0;
+    align-items: flex-start;
+  }
+
+  .project-detail-hero-inner {
+    padding-block: clamp(1.5rem, 6vw, 2.5rem) clamp(.75rem, 3vw, 1.5rem);
+  }
+
   .project-overview-grid { grid-template-columns: 1fr; }
 
   /* Portfolio */
