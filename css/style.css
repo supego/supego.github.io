@@ -388,7 +388,7 @@ img { display: block; max-width: 100%; }
 .current-project-visual img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: transform 500ms cubic-bezier(.4, 0, .2, 1), opacity var(--transition);
   opacity: .88;
 }
@@ -795,7 +795,7 @@ img { display: block; max-width: 100%; }
 }
 
 /* ═══════════════════════════════════════════════════════════════════════
-   SCALESHIFT project page
+   DESLOT project page
    ═══════════════════════════════════════════════════════════════════════ */
 .project-page {
   --project-accent: #f20d0d;
@@ -818,6 +818,18 @@ img { display: block; max-width: 100%; }
   text-transform: uppercase;
 }
 .project-back:hover { color: var(--white); }
+
+.project-brand {
+  position: absolute;
+  left: 50%;
+  width: clamp(92px, 10vw, 118px);
+  transform: translateX(-50%);
+}
+
+.project-brand img {
+  width: 100%;
+  height: auto;
+}
 
 .project-detail-main {
   padding-top: var(--nav-h);
@@ -842,6 +854,7 @@ img { display: block; max-width: 100%; }
   content: '';
   position: absolute;
   inset: 0;
+  z-index: 0;
   background: linear-gradient(180deg, transparent 68%, #050505 100%);
   pointer-events: none;
 }
@@ -851,7 +864,7 @@ img { display: block; max-width: 100%; }
   z-index: 1;
   width: min(1180px, 100%);
   margin: 0 auto;
-  padding: clamp(4rem, 8vw, 7rem) 2rem;
+  padding: clamp(2rem, 5vh, 3.5rem) 2rem;
   text-align: center;
 }
 
@@ -876,9 +889,32 @@ img { display: block; max-width: 100%; }
 }
 
 .project-title-art {
-  width: min(100%, 1040px);
+  width: auto;
+  max-width: min(100%, 1040px);
+  max-height: min(70svh, 600px);
   margin: 0 auto;
   filter: drop-shadow(0 28px 50px rgba(0, 0, 0, .48));
+}
+
+.project-track-divider {
+  position: absolute;
+  right: -8px;
+  bottom: -80px;
+  left: -8px;
+  z-index: 2;
+  height: clamp(340px, 38vw, 620px);
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.project-track-divider img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  object-position: center bottom;
+  opacity: .88;
+  filter: saturate(1.2) hue-rotate(345deg) brightness(.9);
 }
 
 .project-overview {
@@ -1050,6 +1086,9 @@ img { display: block; max-width: 100%; }
   .current-work-heading { align-items: flex-start; flex-direction: column; gap: .75rem; }
   .current-project-copy h4 { font-size: 2.35rem; }
   .project-detail-hero-inner { padding-inline: 1rem; }
+  .project-track-divider { bottom: -42px; height: 280px; }
+  .project-page .nav-logo { display: none; }
+  .project-brand { position: static; width: 96px; transform: none; }
 }
 
 /* ── Scroll-triggered fade-in ───────────────────────────────────────── */
