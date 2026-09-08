@@ -889,9 +889,10 @@ img { display: block; max-width: 100%; }
 }
 
 .project-title-art {
-  width: auto;
-  max-width: min(100%, 1040px);
-  max-height: min(70svh, 600px);
+  width: min(100%, 1040px);
+  height: auto;
+  max-height: none;
+  aspect-ratio: 16 / 9;
   margin: 0 auto;
   filter: drop-shadow(0 28px 50px rgba(0, 0, 0, .48));
 }
