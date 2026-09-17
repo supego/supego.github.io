@@ -1224,8 +1224,9 @@ img { display: block; max-width: 100%; }
   .project-detail-hero-inner { padding-inline: 1rem; }
   .project-page .nav-logo { display: none; }
   .project-brand { position: static; width: 96px; transform: none; }
-  .footer-contact { gap: .1rem; }
-  .footer-contact a { padding-inline: .55rem; }
+  .footer-contact { gap: .25rem; }
+  .footer-contact a { padding-inline: .7rem; }
+  .footer-contact a span { display: none; }
 }
 
 /* ── Scroll-triggered fade-in ───────────────────────────────────────── */
