@@ -1130,6 +1130,33 @@ img { display: block; max-width: 100%; }
   outline-offset: 5px;
 }
 
+.dev-updates-more {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  margin-top: 2rem;
+  padding: .9rem 1.5rem;
+  color: var(--white);
+  font-size: .8rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  border: 1px solid var(--project-accent);
+  border-radius: 999px;
+  transition: background .2s ease, transform .2s ease;
+}
+
+.dev-updates-more:hover {
+  background: var(--project-accent);
+  transform: translateY(-2px);
+}
+
+.dev-updates-more:focus-visible {
+  outline: 2px solid var(--white);
+  outline-offset: 4px;
+}
+
 .project-news {
   padding: 5rem 0 6rem;
   text-align: center;
