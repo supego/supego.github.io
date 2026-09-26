@@ -5,6 +5,7 @@ from __future__ import annotations
 import html
 import json
 import re
+import time
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
@@ -30,7 +31,7 @@ def read_feed() -> list[dict[str, str]]:
     request = urllib.request.Request(
         FEED_URL, headers={"User-Agent": "Mozilla/5.0 (compatible; DESLOT website updater)"}
     )
-    with urllib.request.urlopen(request, timeout=30) as response:
+    with urllib.request.urlopen(request, timeout=15) as response:
         feed = ET.fromstring(response.read())
 
     videos = []
@@ -96,9 +97,19 @@ def render_card(video: dict[str, str]) -> str:
 
 
 def main() -> None:
-    feed_videos = read_feed()
+    feed_videos = []
+    for attempt in range(3):
+        try:
+            feed_videos = read_feed()
+            break
+        except (OSError, ET.ParseError, ValueError) as error:
+            if attempt == 2:
+                print(f"YouTube feed unavailable ({error}); keeping the published videos")
+            else:
+                time.sleep(2 ** (attempt + 1))
     if not feed_videos:
-        raise ValueError("YouTube feed returned no regular videos; keeping the published page")
+        print("No regular videos received; the next scheduled run will try again")
+        return
 
     # Keep older regular videos if a run's 15-item feed is crowded with Shorts.
     by_id = {video["id"]: video for video in cached_videos()}
