@@ -1,0 +1,219 @@
+/* DESLOT screenshots: use the project's existing type, colors and spacing. */
+.project-screenshots {
+  padding: clamp(4.5rem, 8vw, 7rem) 0;
+  scroll-margin-top: calc(var(--nav-h) + 1.5rem);
+  border-top: 1px solid #201515;
+  background: radial-gradient(ellipse at 50% 35%, rgba(242, 13, 13, .065), transparent 65%), #050505;
+}
+
+.project-screenshots .section-label { color: var(--project-accent); }
+
+.screenshot-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: clamp(2rem, 5vw, 3rem);
+}
+
+.screenshot-heading h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2.35rem, 5vw, 4.25rem);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -.035em;
+  color: var(--white);
+}
+
+.screenshot-count {
+  flex-shrink: 0;
+  padding-bottom: .35rem;
+  color: #9c8b8b;
+  font-family: var(--font-display);
+  font-size: .8rem;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: .12em;
+}
+
+.screenshot-stage {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  isolation: isolate;
+  background: #000;
+  border: 1px solid #422222;
+  border-radius: 14px;
+  box-shadow: 0 30px 90px rgba(0, 0, 0, .55), 0 0 45px rgba(242, 13, 13, .045);
+  touch-action: pan-y pinch-zoom;
+}
+
+/* The supplied images share a black presentation mat. Fill the viewer with
+   the photograph while keeping every uploaded original intact. */
+.screenshot-photo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120.761246%;
+  max-width: none;
+  height: auto;
+  transform: translate(-50%, -50%);
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.screenshot-arrow {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  padding: 0;
+  color: #fff;
+  background: rgba(5, 5, 5, .75);
+  border: 1px solid rgba(255, 255, 255, .25);
+  border-radius: 50%;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: background var(--transition), border-color var(--transition);
+}
+
+.screenshot-arrow--previous { left: 1.25rem; }
+.screenshot-arrow--next { right: 1.25rem; }
+.screenshot-arrow svg { width: 20px; height: 20px; }
+.screenshot-arrow:hover { background: var(--project-accent); border-color: var(--project-accent); }
+
+.screenshot-position {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  background: rgba(255, 255, 255, .12);
+}
+
+.screenshot-position-fill {
+  display: block;
+  width: 12.5%;
+  height: 100%;
+  background: var(--project-accent);
+  box-shadow: 0 0 14px rgba(242, 13, 13, .6);
+  transition: width 240ms ease;
+}
+
+.screenshot-caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.35rem .1rem 1.5rem;
+}
+
+.screenshot-title {
+  color: #e8e8e8;
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: 500;
+  letter-spacing: -.015em;
+}
+
+.screenshot-full-size {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  flex-shrink: 0;
+  color: #b6aaaa;
+  font-size: .68rem;
+  font-weight: 500;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.screenshot-full-size:hover { color: #fff; }
+.screenshot-full-size span { color: var(--project-accent); font-size: 1rem; }
+
+.screenshot-thumbnails {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  gap: .65rem;
+  padding: 4px 3px 8px;
+}
+
+.screenshot-thumbnail {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  min-width: 0;
+  overflow: hidden;
+  padding: 0;
+  background: #080808;
+  border: 1px solid #302525;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
+}
+
+.screenshot-thumbnail .screenshot-photo { filter: brightness(.6); transition: filter var(--transition); }
+.screenshot-thumbnail:hover { border-color: #987070; transform: translateY(-2px); }
+.screenshot-thumbnail:hover .screenshot-photo { filter: brightness(.95); }
+
+.screenshot-thumbnail[aria-pressed="true"] {
+  border-color: var(--project-accent);
+  box-shadow: 0 0 0 1px var(--project-accent), 0 4px 22px rgba(242, 13, 13, .18);
+}
+
+.screenshot-thumbnail[aria-pressed="true"] .screenshot-photo { filter: brightness(1); }
+
+.screenshot-thumbnail-number {
+  position: absolute;
+  right: .35rem;
+  bottom: .3rem;
+  color: #fff;
+  font-family: var(--font-display);
+  font-size: .6rem;
+  line-height: 1;
+  letter-spacing: .08em;
+  text-shadow: 0 1px 5px #000, 0 1px 8px #000;
+}
+
+.screenshot-arrow:focus-visible,
+.screenshot-thumbnail:focus-visible,
+.screenshot-stage:focus-visible,
+.screenshot-full-size:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 4px;
+}
+
+@media (max-width: 768px) {
+  .project-screenshots .section-inner { padding-inline: 1.25rem; }
+  .screenshot-stage { border-radius: 10px; }
+  .screenshot-thumbnails {
+    display: flex;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    scrollbar-width: thin;
+    scrollbar-color: #582525 #111;
+  }
+  .screenshot-thumbnail { flex: 0 0 112px; scroll-snap-align: start; }
+  .screenshot-arrow { width: 40px; height: 40px; }
+  .screenshot-arrow--previous { left: .75rem; }
+  .screenshot-arrow--next { right: .75rem; }
+}
+
+@media (max-width: 480px) {
+  .screenshot-heading { gap: .75rem; }
+  .screenshot-count { font-size: .65rem; }
+  .screenshot-caption { padding-top: 1rem; padding-bottom: 1.1rem; }
+  .screenshot-full-size { font-size: .6rem; letter-spacing: .08em; }
+  .screenshot-thumbnail { flex-basis: 96px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-screenshots *, .project-screenshots *::before, .project-screenshots *::after {
+    transition: none;
+    scroll-behavior: auto;
+  }
+}
