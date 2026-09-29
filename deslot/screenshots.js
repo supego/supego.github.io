@@ -6,7 +6,6 @@
   const thumbnails = [...gallery.querySelectorAll('[data-screenshot]')];
   const stage = gallery.querySelector('.screenshot-stage');
   const photo = gallery.querySelector('#screenshot-photo');
-  const caption = gallery.querySelector('.screenshot-title');
   const fullSize = gallery.querySelector('.screenshot-full-size');
   const status = gallery.querySelector('[data-screenshot-status]');
   const counter = document.querySelector('[data-screenshot-count]');
@@ -39,13 +38,12 @@
 
     photo.src = nextPhoto.src;
     photo.alt = thumbnail.dataset.alt;
-    caption.textContent = thumbnail.dataset.title;
     fullSize.href = thumbnail.dataset.src;
-    fullSize.setAttribute('aria-label', `Open full-size screenshot: ${thumbnail.dataset.title} (opens in a new tab)`);
+    fullSize.setAttribute('aria-label', `Open screenshot ${selectedIndex + 1} at full size (opens in a new tab)`);
     counter.textContent = `${String(selectedIndex + 1).padStart(2, '0')} / ${String(thumbnails.length).padStart(2, '0')}`;
     progress.style.width = `${((selectedIndex + 1) / thumbnails.length) * 100}%`;
     thumbnails.forEach((button, buttonIndex) => button.setAttribute('aria-pressed', String(buttonIndex === selectedIndex)));
-    status.textContent = `Screenshot ${selectedIndex + 1} of ${thumbnails.length}: ${thumbnail.dataset.title}.`;
+    status.textContent = `Screenshot ${selectedIndex + 1} of ${thumbnails.length}.`;
     stage.setAttribute('aria-busy', 'false');
 
     if (!reducedMotion.matches && photo.animate) {
