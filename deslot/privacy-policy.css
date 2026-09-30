@@ -1,0 +1,88 @@
+/* DESLOT legal page; shared styles remain in /css/style.css. */
+.project-page { padding-bottom: calc(96px + env(safe-area-inset-bottom)); }
+.project-page .footer-contact { flex-wrap: wrap; }
+.project-page .footer-contact .deslot-privacy-link {
+  color: #b5b5b5;
+  white-space: nowrap;
+}
+.project-page .footer-contact .deslot-privacy-link:hover { color: var(--white); }
+
+.privacy-main {
+  padding-bottom: 4rem;
+  background: radial-gradient(ellipse at 15% 0, rgba(242, 13, 13, .07), transparent 38rem);
+}
+.privacy-document {
+  max-width: 880px;
+  margin-inline: auto;
+  padding: clamp(2.5rem, 6vw, 5rem) 2rem 2rem;
+  color: #bcbcbc;
+  overflow-wrap: anywhere;
+}
+.privacy-heading { padding-bottom: 2.5rem; }
+.privacy-heading .section-label { color: #ff6666; }
+.privacy-heading h1 {
+  color: var(--white);
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 6vw, 4.25rem);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -.035em;
+  margin-bottom: 1.25rem;
+}
+.privacy-updated { color: #a5a5a5; font-size: .9rem; }
+.privacy-intro { margin-top: 1.25rem; max-width: 60ch; font-size: 1.1rem; }
+.privacy-document h2 {
+  color: var(--white);
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+.privacy-contents {
+  border-block: 1px solid #332020;
+  padding-block: 1.5rem;
+  margin-bottom: 3rem;
+}
+.privacy-contents h2 { font-size: 1rem; }
+.privacy-contents ol {
+  columns: 2;
+  column-gap: 2.5rem;
+  padding-left: 1.5rem;
+  font-size: .9rem;
+}
+.privacy-contents li { break-inside: avoid; padding: .25rem 0; }
+.privacy-document a { color: #e8e8e8; text-decoration: underline; text-underline-offset: .22em; }
+.privacy-document a:hover { color: #ff8585; }
+.privacy-document a:focus-visible,
+.privacy-page .project-back:focus-visible {
+  outline: 2px solid #ff8585;
+  outline-offset: 4px;
+}
+.privacy-document section { margin-top: 2.5rem; scroll-margin-top: calc(var(--nav-h) + 1.5rem); }
+.privacy-document section p + p,
+.privacy-document section ul + p { margin-top: 1rem; }
+.privacy-document section ul { margin: 1rem 0; padding-left: 1.5rem; }
+.privacy-document section li + li { margin-top: .6rem; }
+.privacy-document strong { color: #e8e8e8; font-weight: 600; }
+.privacy-skip {
+  position: fixed;
+  top: .5rem;
+  left: .5rem;
+  transform: translateY(-200%);
+  z-index: 200;
+  padding: .75rem 1rem;
+  background: #fff;
+  color: #050505;
+}
+.privacy-skip:focus { transform: none; color: #050505; }
+@media (max-width: 1100px) {
+  .project-page { --footer-h: 96px; }
+}
+@media (max-width: 600px) {
+  .privacy-document { padding-inline: 1.25rem; }
+  .privacy-contents ol { columns: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html:has(.privacy-page) { scroll-behavior: auto; }
+}
