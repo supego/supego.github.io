@@ -1,5 +1,26 @@
 {
   "version": 1,
-  "posts": [],
+  "posts": [
+    {
+      "id": "4d04e190-aae1-4f12-a441-054bf0831bc7",
+      "title": "A Look Inside DESLOT’s Old Career Hub",
+      "body": "Take a look back at the old Career Hub in DESLOT. What catches your eye? Wishlist DESLOT on Steam and the Epic Games Store.",
+      "tags": [
+        "#DESLOT",
+        "#CareerHub",
+        "#GameDevelopment",
+        "#IndieGames",
+        "#Gaming"
+      ],
+      "mentions": [],
+      "publishedAt": "2026-10-01T10:35:02.829Z",
+      "images": [
+        {
+          "src": "/deslot/news/media/4d04e190-aae1-4f12-a441-054bf0831bc7/1.png",
+          "alt": "A Look Inside DESLOT’s Old Career Hub"
+        }
+      ]
+    }
+  ],
   "deletedIds": []
 }
