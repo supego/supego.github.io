@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="../css/style.css?v=20260925-deslot-wishlist" />
   <link rel="stylesheet" href="screenshots.css?v=20260929-gallery-no-captions" />
   <link rel="stylesheet" href="/deslot/privacy-policy.css?v=20260930" />
+  <link rel="stylesheet" href="news.css?v=20261001-news" />
 </head>
 <body class="project-page">
 
@@ -330,12 +331,25 @@
       </div>
     </section>
 
-    <section class="project-news" aria-labelledby="project-news-title">
+    <section class="project-news" id="news" aria-labelledby="project-news-title">
       <div class="section-inner">
-        <div class="section-label">Stay tuned</div>
-        <h2 id="project-news-title">More news soon.</h2>
+        <div class="news-heading">
+          <div><div class="section-label">From the studio</div><h2 id="project-news-title">News.</h2></div>
+          <p>The latest from DESLOT: development notes, new features and a closer look at the miniature racing world.</p>
+        </div>
+        <div id="news-list" class="news-list"></div>
+        <div class="news-pagination">
+          <p id="news-status" role="status" aria-live="polite">Loading news…</p>
+          <button id="news-more" class="news-button" type="button" hidden>Load next 5</button>
+          <button id="news-retry" class="news-button" type="button" hidden>Try again</button>
+        </div>
+        <noscript><p>Enable JavaScript to browse DESLOT news.</p></noscript>
       </div>
     </section>
+    <dialog id="news-dialog" class="news-dialog" aria-labelledby="news-dialog-title">
+      <div class="news-dialog-header"><button id="news-close" class="news-button" type="button" autofocus>Close post ×</button></div>
+      <div id="news-dialog-content"></div>
+    </dialog>
   </main>
 
   <footer id="site-footer">
@@ -388,5 +402,6 @@
 
   <script src="../js/main.js"></script>
   <script src="screenshots.js?v=20260929-gallery-no-captions"></script>
+  <script src="news.js?v=20261001-news" defer></script>
 </body>
 </html>
