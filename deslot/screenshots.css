@@ -156,18 +156,6 @@
 
 .screenshot-thumbnail[aria-pressed="true"] .screenshot-photo { filter: brightness(1); }
 
-.screenshot-thumbnail-number {
-  position: absolute;
-  right: .35rem;
-  bottom: .3rem;
-  color: #fff;
-  font-family: var(--font-display);
-  font-size: .6rem;
-  line-height: 1;
-  letter-spacing: .08em;
-  text-shadow: 0 1px 5px #000, 0 1px 8px #000;
-}
-
 .screenshot-arrow:focus-visible,
 .screenshot-thumbnail:focus-visible,
 .screenshot-stage:focus-visible,
