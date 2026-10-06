@@ -1108,7 +1108,7 @@ img { display: block; max-width: 100%; }
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: clamp(1.5rem, 4vw, 3rem);
+  padding: clamp(1.25rem, 2vw, 1.5rem);
   text-align: left;
 }
 
@@ -1123,7 +1123,7 @@ img { display: block; max-width: 100%; }
 
 .dev-update-copy h3 {
   font-family: var(--font-display);
-  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-size: clamp(1.5rem, 3vw, 2rem);
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: -.025em;
@@ -1213,6 +1213,10 @@ img { display: block; max-width: 100%; }
 /* ═══════════════════════════════════════════════════════════════════════
    Responsive
    ═══════════════════════════════════════════════════════════════════════ */
+@media (max-width: 1024px) {
+  .dev-update-card { grid-template-columns: 1fr; }
+}
+
 @media (max-width: 768px) {
   /* Nav */
   .nav-links {
@@ -1249,7 +1253,6 @@ img { display: block; max-width: 100%; }
   }
 
   .project-overview-grid { grid-template-columns: 1fr; }
-  .dev-update-card { grid-template-columns: 1fr; }
 
   /* Portfolio */
   .games-grid {
