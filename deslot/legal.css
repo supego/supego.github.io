@@ -1,0 +1,44 @@
+/* Credit entries extend the existing DESLOT legal-page styles. */
+.legal-page .privacy-heading {
+  border-bottom: 1px solid #332020;
+}
+
+.legal-asset {
+  margin-top: 1.5rem;
+  padding: clamp(1.25rem, 4vw, 2rem);
+  border: 1px solid #292323;
+  border-left: 2px solid #a83232;
+  background: rgba(255, 255, 255, .015);
+}
+
+.legal-asset-type {
+  color: #ff8585;
+  font-size: .75rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.legal-asset h3 {
+  margin: .5rem 0 1.5rem;
+  color: var(--white);
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 3vw, 1.55rem);
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.legal-asset-details {
+  display: grid;
+  grid-template-columns: 6rem minmax(0, 1fr);
+  gap: .85rem 1.25rem;
+  font-size: .95rem;
+}
+
+.legal-asset-details dt { color: #a5a5a5; }
+.legal-asset-details dd { margin: 0; }
+
+@media (max-width: 480px) {
+  .legal-asset-details { grid-template-columns: minmax(0, 1fr); gap: .3rem; }
+  .legal-asset-details dd + dt { margin-top: .75rem; }
+}
