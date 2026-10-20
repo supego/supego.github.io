@@ -2,6 +2,26 @@
   "version": 1,
   "posts": [
     {
+      "id": "1fe59c97-5460-4b16-9a62-6aeda6aa8776",
+      "title": "DESLOT: Full RC Controller Support",
+      "body": "Take control your way: DESLOT supports full RC controller input. Add DESLOT to your Steam or Epic Games Store wishlist, and stay tuned for more news!",
+      "tags": [
+        "#DESLOT",
+        "#RCController",
+        "#RacingGames",
+        "#SteamWishlist",
+        "#EpicGamesStore"
+      ],
+      "mentions": [],
+      "publishedAt": "2026-10-20T09:55:56.300Z",
+      "images": [
+        {
+          "src": "/deslot/news/media/1fe59c97-5460-4b16-9a62-6aeda6aa8776/1.jpg",
+          "alt": "DESLOT: Full RC Controller Support"
+        }
+      ]
+    },
+    {
       "id": "f3908f93-6488-4dde-9517-20fc57be3870",
       "title": "Mini Lane Runners 4WD is coming to Deslot",
       "body": "Mini Lane Runners 4WD is on its way to Deslot. Ready to hit the lanes?",
