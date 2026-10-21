@@ -2,6 +2,26 @@
   "version": 1,
   "posts": [
     {
+      "id": "8dec4b76-5b2b-4f63-8809-c6fdbb80e3df",
+      "title": "DESLOT Foam Track Day",
+      "body": "Busy track day testing races against the CPU on foam tracks in DESLOT! Which line would you take? Add DESLOT to your Steam or Epic wishlist.",
+      "tags": [
+        "#DESLOT",
+        "#RacingGame",
+        "#TrackDay",
+        "#IndieGame",
+        "#FoamTrack"
+      ],
+      "mentions": [],
+      "publishedAt": "2026-10-21T15:48:33.957Z",
+      "images": [
+        {
+          "src": "/deslot/news/media/8dec4b76-5b2b-4f63-8809-c6fdbb80e3df/1.png",
+          "alt": "DESLOT Foam Track Day"
+        }
+      ]
+    },
+    {
       "id": "1fe59c97-5460-4b16-9a62-6aeda6aa8776",
       "title": "DESLOT: Full RC Controller Support",
       "body": "Take control your way: DESLOT supports full RC controller input. Add DESLOT to your Steam or Epic Games Store wishlist, and stay tuned for more news!",
