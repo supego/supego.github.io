@@ -2,6 +2,85 @@
   "version": 1,
   "posts": [
     {
+      "id": "9597cc5f-5a2c-4c57-81c7-2093884a7d92",
+      "title": "Early look at DESLOT’s procedural tracks",
+      "body": "Take an early look at track procedural generation in DESLOT, aimed at bringing more replayability and varied training scenarios. What kind of track would you want to practice on? Wishlist DESLOT on Steam or Epic.",
+      "tags": [
+        "#DESLOT",
+        "#ProceduralGeneration",
+        "#RacingGames",
+        "#GameDev"
+      ],
+      "mentions": [],
+      "publishedAt": "2026-10-22T23:34:03.626Z",
+      "images": [
+        {
+          "src": "/deslot/news/media/9597cc5f-5a2c-4c57-81c7-2093884a7d92/1.png",
+          "alt": "Early look at DESLOT’s procedural tracks"
+        },
+        {
+          "src": "/deslot/news/media/9597cc5f-5a2c-4c57-81c7-2093884a7d92/2.png",
+          "alt": "Early look at DESLOT’s procedural tracks"
+        },
+        {
+          "src": "/deslot/news/media/9597cc5f-5a2c-4c57-81c7-2093884a7d92/3.png",
+          "alt": "Early look at DESLOT’s procedural tracks"
+        },
+        {
+          "src": "/deslot/news/media/9597cc5f-5a2c-4c57-81c7-2093884a7d92/4.png",
+          "alt": "Early look at DESLOT’s procedural tracks"
+        },
+        {
+          "src": "/deslot/news/media/9597cc5f-5a2c-4c57-81c7-2093884a7d92/5.png",
+          "alt": "Early look at DESLOT’s procedural tracks"
+        },
+        {
+          "src": "/deslot/news/media/9597cc5f-5a2c-4c57-81c7-2093884a7d92/6.png",
+          "alt": "Early look at DESLOT’s procedural tracks"
+        },
+        {
+          "src": "/deslot/news/media/9597cc5f-5a2c-4c57-81c7-2093884a7d92/7.png",
+          "alt": "Early look at DESLOT’s procedural tracks"
+        },
+        {
+          "src": "/deslot/news/media/9597cc5f-5a2c-4c57-81c7-2093884a7d92/8.png",
+          "alt": "Early look at DESLOT’s procedural tracks"
+        },
+        {
+          "src": "/deslot/news/media/9597cc5f-5a2c-4c57-81c7-2093884a7d92/9.png",
+          "alt": "Early look at DESLOT’s procedural tracks"
+        },
+        {
+          "src": "/deslot/news/media/9597cc5f-5a2c-4c57-81c7-2093884a7d92/10.png",
+          "alt": "Early look at DESLOT’s procedural tracks"
+        },
+        {
+          "src": "/deslot/news/media/9597cc5f-5a2c-4c57-81c7-2093884a7d92/11.png",
+          "alt": "Early look at DESLOT’s procedural tracks"
+        },
+        {
+          "src": "/deslot/news/media/9597cc5f-5a2c-4c57-81c7-2093884a7d92/12.png",
+          "alt": "Early look at DESLOT’s procedural tracks"
+        },
+        {
+          "src": "/deslot/news/media/9597cc5f-5a2c-4c57-81c7-2093884a7d92/13.png",
+          "alt": "Early look at DESLOT’s procedural tracks"
+        },
+        {
+          "src": "/deslot/news/media/9597cc5f-5a2c-4c57-81c7-2093884a7d92/14.png",
+          "alt": "Early look at DESLOT’s procedural tracks"
+        },
+        {
+          "src": "/deslot/news/media/9597cc5f-5a2c-4c57-81c7-2093884a7d92/15.png",
+          "alt": "Early look at DESLOT’s procedural tracks"
+        },
+        {
+          "src": "/deslot/news/media/9597cc5f-5a2c-4c57-81c7-2093884a7d92/16.png",
+          "alt": "Early look at DESLOT’s procedural tracks"
+        }
+      ]
+    },
+    {
       "id": "8dec4b76-5b2b-4f63-8809-c6fdbb80e3df",
       "title": "DESLOT Foam Track Day",
       "body": "Busy track day testing races against the CPU on foam tracks in DESLOT! Which line would you take? Add DESLOT to your Steam or Epic wishlist.",
