@@ -54,8 +54,7 @@
 .privacy-contents li { break-inside: avoid; padding: .25rem 0; }
 .privacy-document a { color: #e8e8e8; text-decoration: underline; text-underline-offset: .22em; }
 .privacy-document a:hover { color: #ff8585; }
-.privacy-document a:focus-visible,
-.privacy-page .project-back:focus-visible {
+.privacy-document a:focus-visible {
   outline: 2px solid #ff8585;
   outline-offset: 4px;
 }
