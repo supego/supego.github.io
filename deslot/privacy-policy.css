@@ -1,5 +1,5 @@
 /* DESLOT legal page; shared styles remain in /css/style.css. */
-.project-page { padding-bottom: calc(96px + env(safe-area-inset-bottom)); }
+.project-page { padding-bottom: calc(var(--footer-h) + env(safe-area-inset-bottom)); }
 .project-page .footer-contact { flex-wrap: wrap; }
 .project-page .footer-contact .deslot-privacy-link {
   color: #b5b5b5;

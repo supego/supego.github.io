@@ -1,6 +1,18 @@
 /* ── Year in footer ─────────────────────────────────────────────────── */
 document.getElementById('year').textContent = new Date().getFullYear();
 
+/* Keep page content clear of the fixed footer when its links wrap. */
+(function () {
+  const footer = document.getElementById('site-footer');
+  if (!footer) return;
+  const reserveFooterSpace = () => {
+    // The body adds the safe-area inset separately.
+    document.body.style.setProperty('--footer-h', 'calc(' + Math.ceil(footer.getBoundingClientRect().height) + 'px - env(safe-area-inset-bottom))');
+  };
+  new ResizeObserver(reserveFooterSpace).observe(footer);
+  reserveFooterSpace();
+})();
+
 /* ── Hero canvas: layered sine-wave / FFT-style visualiser ──────────── */
 (function () {
   const canvas = document.getElementById('hero-canvas');
