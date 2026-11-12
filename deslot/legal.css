@@ -11,6 +11,8 @@
   background: rgba(255, 255, 255, .015);
 }
 
+.legal-asset[id] { scroll-margin-top: calc(var(--nav-h) + 1.5rem); }
+
 .legal-asset-type {
   color: #ff8585;
   font-size: .75rem;
