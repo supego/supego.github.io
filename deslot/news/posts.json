@@ -2,6 +2,25 @@
   "version": 1,
   "posts": [
     {
+      "id": "94e8dbdc-8abf-4b5e-93ae-e06be41283bd",
+      "title": "DESLOT update: Steam Deck and animations",
+      "body": "It’s been a while! We’ve been busy working on Steam Deck optimizations and more immersive animations for DESLOT. Which little detail makes a racing game feel more alive to you? Wishlist DESLOT on Steam and Epic to follow along.",
+      "tags": [
+        "#DESLOT",
+        "#IndieGame",
+        "#SteamDeck",
+        "#RacingGame"
+      ],
+      "mentions": [],
+      "publishedAt": "2026-11-25T14:40:27.155Z",
+      "images": [
+        {
+          "src": "/deslot/news/media/94e8dbdc-8abf-4b5e-93ae-e06be41283bd/1.png",
+          "alt": "DESLOT update: Steam Deck and animations"
+        }
+      ]
+    },
+    {
       "id": "9597cc5f-5a2c-4c57-81c7-2093884a7d92",
       "title": "Early look at DESLOT’s procedural tracks",
       "body": "Take an early look at track procedural generation in DESLOT, aimed at bringing more replayability and varied training scenarios. What kind of track would you want to practice on? Wishlist DESLOT on Steam or Epic.",
